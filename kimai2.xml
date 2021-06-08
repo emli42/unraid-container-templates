@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kimai2</Name>
+  <Repository>kimai/kimai2</Repository>
+  <Registry>https://hub.docker.com/r/kimai/kimai2/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/kimai/kimai2/</Support>
+  <Project/>
+  <Overview>Official repo for https://github.com/kevinpapst/kimai2   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623177748</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Official repo for https://github.com/kevinpapst/kimai2   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8001</HostPort>
+        <ContainerPort>8001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/kimai</HostDir>
+      <ContainerDir>/public</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>ADMINMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>ADMINPASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DATABASE_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>nginx,localhost/Value>
+      <Name>TRUSTED_HOSTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="ADMINMAIL" Target="ADMINMAIL" Default="" Mode="" Description="Container Variable: ADMINMAIL" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="ADMINPASS" Target="ADMINPASS" Default="" Mode="" Description="Container Variable: ADMINPASS" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="Container Variable: DATABASE_URL" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TRUSTED_HOSTS" Target="TRUSTED_HOSTS" Default="" Mode="" Description="Container Variable: TRUSTED_HOSTS" Type="Variable" Display="always" Required="false" Mask="false">nginx,localhost,127.0.0.1,192.168.1.69</Config>
+  <Config Name="Public" Target="/public" Default="" Mode="rw" Description="Container Path: /public" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/kimai</Config>
+  <Config Name="Web UI" Target="8001" Default="" Mode="tcp" Description="Container Port: 8001" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
